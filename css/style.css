@@ -6,11 +6,11 @@
 }
 
 /************************************************
-MAIN 
-************************************************/
+    MAIN 
+ ************************************************/
 
 table {
-    table-layout: fixed;
+    /* table-layout: fixed; */
 }
 
 .accordion {
@@ -20,4 +20,22 @@ table {
 
 .list-group-flush > .list-group-item {
     border-width: 0 0 var(--bs-list-group-border-width);
+}
+
+/************************************************
+    RESPONSIVE
+ ************************************************/
+@media screen and (max-width: 1920px) {
+    .card {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .float-xxl-start {
+        margin-right: 2rem;
+    }
+    table {
+        /* width: auto !important; */
+        /* table-layout: initial !important; */
+    }
 }

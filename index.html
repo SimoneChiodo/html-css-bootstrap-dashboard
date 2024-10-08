@@ -106,643 +106,652 @@
 
         <!-- Main -->
         <main>
-            <!-- Sezione: Titolo -->
-            <div class="container d-flex justify-content-between py-4">
-                <h1>Catalogo Libri</h1>
-
-                <button type="button" class="btn btn-primary">
-                    Aggiungi Libro
-                </button>
-            </div>
-
-            <!-- Sezione: Lista Libri -->
+            <!-- Lista Libri -->
             <div class="container">
-                <!-- Tabella Libri -->
-                <table class="visually-hidden table table-striped align-middle">
-                    <!-- Titoli tabella -->
-                    <thead>
-                        <tr>
-                            <th scope="col">Titolo</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col" class="d-none d-md-block">
-                                Data prestito
-                            </th>
-                            <th scope="col">Azioni</th>
-                        </tr>
-                    </thead>
+                <div class="float-xxl-start">
+                    <!-- --- MAIN --- -->
+                    <!-- Sezione: Titolo -->
+                    <div class="d-flex justify-content-between py-4 pt-xxl-0">
+                        <h1>Catalogo Libri</h1>
 
-                    <!-- Elementi tabella -->
-                    <tbody>
-                        <!-- Elemento 1 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>I pilastri della terra</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 2 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>I promessi sposi</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 3 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Il signore degli anelli</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge bg-warning text-light"
-                                    >In prestito</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">18/10/2023</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 4 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Harry Potter e la pietra filosofale</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 5 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Il codice Da Vinci</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-danger"
-                                    >Non disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 6 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Shining</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 7 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>La divina commedia</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge bg-warning text-light"
-                                    >In prestito</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">21/09/2023</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 8 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Il trono di spade</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 9 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Il mondo di Sofia</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-danger"
-                                    >Non disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 10 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>
-                                Le cronache di Narndia: il leone, la strega e
-                                l'armadio
-                            </td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-light bg-warning"
-                                    >In prestito</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">25/07/2023</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 11 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>Il piccolo principe</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <!-- Elemento 12 -->
-                        <tr>
-                            <!-- Colonna 1 -->
-                            <td>La storia infinita</td>
-
-                            <!-- Colonna 2 -->
-                            <td>
-                                <span class="badge text-bg-success"
-                                    >Disponibile</span
-                                >
-                            </td>
-
-                            <!-- Colonna 3 Responsive -->
-                            <td scope="col" class="d-none d-md-table-cell">
-                                <p class="m-0">-</p>
-                            </td>
-
-                            <!-- Colonna 4 -->
-                            <td>
-                                <!-- edit button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <!-- delete button -->
-                                <button
-                                    type="button"
-                                    class="btn border border-secondary text-secondary p-1 px-2"
-                                >
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- Sezione: Sidebar -->
-                <!-- Card 1 - Todo List -->
-                <div
-                    class="visually-hidden card mb-4 w-100"
-                    style="width: 18rem"
-                >
-                    <!-- Titolo Card -->
-                    <div class="card-header">
-                        <h3 class="fw-normal">Todo</h3>
+                        <button type="button" class="btn btn-primary">
+                            Aggiungi Libro
+                        </button>
                     </div>
 
-                    <!-- Contenuto Card -->
-                    <ul class="list-group list-group-flush">
-                        <!-- Riga 1 -->
-                        <li class="list-group-item">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="check-element-1"
-                            />
-                            <label
-                                class="form-check-label"
-                                for="check-element-1"
-                            >
-                                Chiamare segreteria
-                            </label>
-                        </li>
+                    <!-- Sezione: Tabella Libri -->
+                    <table class="table table-striped align-middle">
+                        <!-- Titoli tabella -->
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col" class="d-none d-md-block">
+                                    Data prestito
+                                </th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
 
-                        <!-- Riga 2 -->
-                        <li class="list-group-item">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="check-element-2"
-                            />
-                            <label
-                                class="form-check-label"
-                                for="check-element-2"
-                            >
-                                Mandare avvisi prestiti scaduti
-                            </label>
-                        </li>
+                        <!-- Elementi tabella -->
+                        <tbody>
+                            <!-- Elemento 1 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>I pilastri della terra</td>
 
-                        <!-- Riga 3 -->
-                        <li class="list-group-item">
-                            <input
-                                class="form-check-input"
-                                type="checkbox"
-                                value=""
-                                id="check-element-3"
-                            />
-                            <label
-                                class="form-check-label"
-                                for="check-element-3"
-                            >
-                                Ordinare nuovi libri
-                            </label>
-                        </li>
-                    </ul>
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 2 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>I promessi sposi</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 3 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Il signore degli anelli</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge bg-warning text-light"
+                                        >In prestito</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">18/10/2023</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 4 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Harry Potter e la pietra filosofale</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 5 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Il codice Da Vinci</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-danger"
+                                        >Non disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 6 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Shining</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 7 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>La divina commedia</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge bg-warning text-light"
+                                        >In prestito</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">21/09/2023</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 8 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Il trono di spade</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 9 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Il mondo di Sofia</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-danger"
+                                        >Non disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 10 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>
+                                    Le cronache di Narndia: il leone, la strega
+                                    e l'armadio
+                                </td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-light bg-warning"
+                                        >In prestito</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">25/07/2023</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 11 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>Il piccolo principe</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Elemento 12 -->
+                            <tr>
+                                <!-- Colonna 1 -->
+                                <td>La storia infinita</td>
+
+                                <!-- Colonna 2 -->
+                                <td>
+                                    <span class="badge text-bg-success"
+                                        >Disponibile</span
+                                    >
+                                </td>
+
+                                <!-- Colonna 3 Responsive -->
+                                <td scope="col" class="d-none d-md-table-cell">
+                                    <p class="m-0">-</p>
+                                </td>
+
+                                <!-- Colonna 4 -->
+                                <td>
+                                    <!-- edit button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <!-- delete button -->
+                                    <button
+                                        type="button"
+                                        class="btn border border-secondary text-secondary p-1 px-2"
+                                    >
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <!-- Card 2 - FAQ -->
-                <div class="card mb-4 w-100" style="width: 18rem">
-                    <!-- Titolo Card -->
-                    <div class="card-header">
-                        <h3 class="fw-normal">F.A.Q.</h3>
+                <!-- --- SIDEBAR --- -->
+                <div class="sidebar mt-xxl-5">
+                    <!-- Card 1 - Todo List -->
+                    <div class="card mb-4 mt-xxl-5" style="width: 18rem">
+                        <!-- Titolo Card -->
+                        <div class="card-header">
+                            <h3 class="fw-normal">Todo</h3>
+                        </div>
+
+                        <!-- Contenuto Card -->
+                        <ul class="list-group list-group-flush">
+                            <!-- Riga 1 -->
+                            <li class="list-group-item">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="check-element-1"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="check-element-1"
+                                >
+                                    Chiamare segreteria
+                                </label>
+                            </li>
+
+                            <!-- Riga 2 -->
+                            <li class="list-group-item">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="check-element-2"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="check-element-2"
+                                >
+                                    Mandare avvisi prestiti scaduti
+                                </label>
+                            </li>
+
+                            <!-- Riga 3 -->
+                            <li class="list-group-item">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="check-element-3"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="check-element-3"
+                                >
+                                    Ordinare nuovi libri
+                                </label>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Contenuto Card -->
-                    <ul
-                        class="accordion list-group list-group-flush py-2"
-                        id="accordionExample"
-                    >
-                        <!-- Riga 1 -->
-                        <li class="list-group-item border-0 p-0 px-3">
-                            <div class="accordion-item border-0 border-bottom">
-                                <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne"
-                                        aria-expanded="false"
-                                        aria-controls="collapseOne"
-                                    >
-                                        Come aggiungere un nuovo libro
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseOne"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                >
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Libero velit facilis
-                                        voluptatem fugit dicta. Aut deserunt
-                                        cupiditate quibusdam laudantium natus,
-                                        ducimus expedita, id, odit nostrum
-                                        maiores neque deleniti porro omnis.
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                    <!-- Card 2 - FAQ -->
+                    <div class="card mb-4" style="width: 18rem">
+                        <!-- Titolo Card -->
+                        <div class="card-header">
+                            <h3 class="fw-normal">F.A.Q.</h3>
+                        </div>
 
-                        <!-- Riga 2 -->
-                        <li class="list-group-item border-0 p-0 px-3">
-                            <div class="accordion-item border-0 border-bottom">
-                                <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo"
-                                        aria-expanded="false"
-                                        aria-controls="collapseTwo"
-                                    >
-                                        Come posso accedere all'anagrafica
-                                        utenti?
-                                    </button>
-                                </h2>
+                        <!-- Contenuto Card -->
+                        <ul
+                            class="accordion list-group list-group-flush py-2"
+                            id="accordionExample"
+                        >
+                            <!-- Riga 1 -->
+                            <li class="list-group-item border-0 p-0 px-3">
                                 <div
-                                    id="collapseTwo"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
+                                    class="accordion-item border-0 border-bottom"
                                 >
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing elit. Vero dolore unde enim
-                                        eveniet eius, rem officia similique fuga
-                                        deserunt minima quae recusandae illum
-                                        iste ea exercitationem id harum debitis
-                                        cum?
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne"
+                                        >
+                                            Come aggiungere un nuovo libro
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseOne"
+                                        class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit. Libero
+                                            velit facilis voluptatem fugit
+                                            dicta. Aut deserunt cupiditate
+                                            quibusdam laudantium natus, ducimus
+                                            expedita, id, odit nostrum maiores
+                                            neque deleniti porro omnis.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <!-- Riga 3 -->
-                        <li class="list-group-item border-0 p-0 px-3">
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="collapseThree"
-                                    >
-                                        Posso usare questa dashboard da mobile?
-                                    </button>
-                                </h2>
+                            <!-- Riga 2 -->
+                            <li class="list-group-item border-0 p-0 px-3">
                                 <div
-                                    id="collapseThree"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
+                                    class="accordion-item border-0 border-bottom"
                                 >
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Soluta officiis
-                                        laudantium quas quod magnam illum
-                                        ratione placeat molestiae et ullam,
-                                        eveniet molestias reprehenderit eos,
-                                        aperiam consequuntur quis nemo. Error,
-                                        assumenda.
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo"
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwo"
+                                        >
+                                            Come posso accedere all'anagrafica
+                                            utenti?
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseTwo"
+                                        class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit. Vero
+                                            dolore unde enim eveniet eius, rem
+                                            officia similique fuga deserunt
+                                            minima quae recusandae illum iste ea
+                                            exercitationem id harum debitis cum?
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+
+                            <!-- Riga 3 -->
+                            <li class="list-group-item border-0 p-0 px-3">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                        >
+                                            Posso usare questa dashboard da
+                                            mobile?
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseThree"
+                                        class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Soluta
+                                            officiis laudantium quas quod magnam
+                                            illum ratione placeat molestiae et
+                                            ullam, eveniet molestias
+                                            reprehenderit eos, aperiam
+                                            consequuntur quis nemo. Error,
+                                            assumenda.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
