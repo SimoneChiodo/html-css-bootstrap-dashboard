@@ -13,15 +13,529 @@
             crossorigin="anonymous"
         />
 
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <!-- Header -->
-        <header></header>
+        <header>
+            <nav
+                class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
+                data-bs-theme="dark"
+            >
+                <div class="container-fluid">
+                    <!-- Logo Navbar -->
+                    <a class="navbar-brand" href="#">
+                        <img
+                            class="header-logo"
+                            src="./img/duck.png"
+                            alt="logo"
+                        />
+                    </a>
+
+                    <!-- Responsive Link Button  -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Container Link -->
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <!-- Elenco Link -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- Link 1 -->
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Catalogo Libri</a
+                                >
+                            </li>
+
+                            <!-- Link 2 -->
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    aria-disabled="true"
+                                    >Anagrafica Utenti</a
+                                >
+                            </li>
+
+                            <!-- Link 3 -->
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    aria-disabled="true"
+                                    >Storico Prestiti</a
+                                >
+                            </li>
+
+                            <!-- Link 4 -->
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    aria-disabled="true"
+                                    >Help</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <!-- Main -->
-        <main></main>
+        <main>
+            <!-- Sezione: Titolo -->
+            <div class="container d-flex justify-content-between py-4">
+                <h1>Catalogo Libri</h1>
+
+                <button type="button" class="btn btn-primary">
+                    Aggiungi Libro
+                </button>
+            </div>
+
+            <!-- Sezione: Lista Libri -->
+            <div class="container">
+                <!-- Tabella Libri -->
+                <table class="table table-striped">
+                    <!-- Titoli tabella -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Elementi tabella -->
+                    <tbody>
+                        <!-- Elemento 1 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 2 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 3 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 4 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 5 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 6 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 7 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 8 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 9 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 10 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 11 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 12 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Elemento 2 -->
+                        <tr>
+                            <!-- Riga 1 -->
+                            <td class="align-middle">I pilastri della terra</td>
+
+                            <!-- Riga 2 -->
+                            <td class="align-middle">
+                                <span class="badge text-bg-success"
+                                    >Disponibile</span
+                                >
+                            </td>
+
+                            <!-- Riga 3 -->
+                            <td class="align-middle">
+                                <!-- edit button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <!-- delete button -->
+                                <button
+                                    type="button"
+                                    class="btn border border-secondary text-secondary p-1 px-2"
+                                >
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
 
         <!-- BOOTSTRAP JS -->
         <script
