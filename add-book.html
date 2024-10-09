@@ -172,7 +172,7 @@
                         </div>
 
                         <!-- Elemento 4 (Dropdown) -->
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
                             <label for="exampleInputGenre" class="form-label"
                                 >Genere</label
                             >
@@ -205,9 +205,9 @@
                         </div>
 
                         <!-- Elemento 6 (ISBN) -->
-                        <div class="col-12 mb-3">
+                        <div class="col-12 mb-5">
                             <label for="exampleInputISBN" class="form-label"
-                                >ISBN</label
+                                >ISBN#</label
                             >
                             <input
                                 type="text"
@@ -221,20 +221,25 @@
                         <hr />
 
                         <!-- Elemento 7 (Note) -->
-                        <div class="col-12 form-floating">
-                            <textarea
-                                class="form-control"
-                                placeholder="Leave a comment here"
-                                id="floatingTextarea2"
-                                style="height: 100px"
-                            ></textarea>
-                            <label for="floatingTextarea2"
-                                >Inserisci eventuali note sul libro</label
+                        <div class="col-12 mb-3 mt-2">
+                            <label for="exampleInputNote" class="form-label"
+                                >Note</label
                             >
+                            <section class="form-floating form-notes">
+                                <textarea
+                                    class="form-control"
+                                    placeholder="Leave a comment here"
+                                    id="floatingTextarea2"
+                                    style="height: 100px"
+                                ></textarea>
+                                <label for="floatingTextarea2"
+                                    >Inserisci eventuali note sul libro</label
+                                >
+                            </section>
                         </div>
 
                         <!-- Elemento 8 (Checkbox) -->
-                        <div class="col mb-3 form-check">
+                        <div class="col-12 mb-3 form-check">
                             <input
                                 type="checkbox"
                                 class="form-check-input"
@@ -244,14 +249,12 @@
                                 >Disponibile anche in digitale</label
                             >
                         </div>
-
-                        <div class="w-100"></div>
-
-                        <!-- Submit -->
-                        <button type="submit" class="col btn btn-primary">
-                            Aggiungi libro
-                        </button>
                     </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary mb-4">
+                        Aggiungi libro
+                    </button>
                 </form>
             </div>
         </main>
