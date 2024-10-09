@@ -8,24 +8,24 @@
 /************************************************
     MAIN 
  ************************************************/
-
+/* 
 table {
-    /* table-layout: fixed; */
+    table-layout: fixed;
 }
-
+*/
 .accordion {
     --bs-accordion-active-bg: transparent;
     --bs-accordion-btn-focus-box-shadow: none;
 }
-
+/*
 .list-group-flush > .list-group-item {
     border-width: 0 0 var(--bs-list-group-border-width);
-}
+} */
 
 /************************************************
     RESPONSIVE
  ************************************************/
-@media screen and (max-width: 1920px) {
+/* @media screen and (max-width: 1920px) {
     .card {
         width: 100% !important;
     }
@@ -35,7 +35,7 @@ table {
         margin-right: 2rem;
     }
     table {
-        /* width: auto !important; */
-        /* table-layout: initial !important; */
+        width: auto !important;
+        table-layout: initial !important;
     }
-}
+} */
