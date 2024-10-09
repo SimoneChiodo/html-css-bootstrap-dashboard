@@ -34,7 +34,7 @@
             >
                 <div class="container-fluid">
                     <!-- Logo Navbar -->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                         <img
                             class="header-logo"
                             src="./img/duck.png"
@@ -119,7 +119,141 @@
         <main>
             <!-- Lista Libri -->
             <div class="container">
-                
+                <!-- Sezione: Titolo -->
+                <div class="py-4">
+                    <h1>Nuovo Libro</h1>
+                </div>
+
+                <!-- Sezione: Form -->
+                <form>
+                    <div class="row">
+                        <!-- Elemento 1 (Nome) -->
+                        <div class="col-6 mb-3">
+                            <label for="exampleInputName" class="form-label"
+                                >Nome Autore</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputName"
+                                aria-describedby="emailHelp"
+                                placeholder="Inserisci il nome dell'autore"
+                            />
+                        </div>
+
+                        <!-- Elemento 2 (Cognome) -->
+                        <div class="col-6 mb-3">
+                            <label for="exampleInputSurname" class="form-label"
+                                >Cognome Autore</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputSurname"
+                                placeholder="Inserisci il cognome dell'autore"
+                            />
+                        </div>
+
+                        <!-- Elemento 3 (Titolo) -->
+                        <div class="col-12 mb-3">
+                            <label for="exampleInputTitle" class="form-label"
+                                >Titolo</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputTitle"
+                                aria-describedby="emailHelp"
+                                placeholder="Inserisci il titolo del libro"
+                            />
+                            <div id="emailHelp" class="form-text">
+                                Titolo versione italiana
+                            </div>
+                        </div>
+
+                        <!-- Elemento 4 (Dropdown) -->
+                        <div class="col-12">
+                            <label for="exampleInputGenre" class="form-label"
+                                >Genere</label
+                            >
+                            <select
+                                class="form-select"
+                                aria-label="Default select example"
+                                id="exampleInputGenre"
+                            >
+                                <option value="" selected>
+                                    Scegli il genere
+                                </option>
+                                <option value="1">Genere 1</option>
+                                <option value="2">Genere 2</option>
+                                <option value="3">Genere 3</option>
+                            </select>
+                        </div>
+
+                        <!-- Elemento 5 (Anno) -->
+                        <div class="col-12 mb-3">
+                            <label for="exampleInputYear" class="form-label"
+                                >Anno di pubblicazione</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputYear"
+                                aria-describedby="emailHelp"
+                                placeholder="Inserisci l'anno"
+                            />
+                        </div>
+
+                        <!-- Elemento 6 (ISBN) -->
+                        <div class="col-12 mb-3">
+                            <label for="exampleInputISBN" class="form-label"
+                                >ISBN</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputISBN"
+                                aria-describedby="emailHelp"
+                                placeholder="Inserisci il codice ISBN#"
+                            />
+                        </div>
+
+                        <hr />
+
+                        <!-- Elemento 7 (Note) -->
+                        <div class="col-12 form-floating">
+                            <textarea
+                                class="form-control"
+                                placeholder="Leave a comment here"
+                                id="floatingTextarea2"
+                                style="height: 100px"
+                            ></textarea>
+                            <label for="floatingTextarea2"
+                                >Inserisci eventuali note sul libro</label
+                            >
+                        </div>
+
+                        <!-- Elemento 8 (Checkbox) -->
+                        <div class="col mb-3 form-check">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                                >Disponibile anche in digitale</label
+                            >
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="col btn btn-primary">
+                            Aggiungi libro
+                        </button>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <!-- BOOTSTRAP JS -->
